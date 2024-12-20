@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body{
+    background-color: tomato;
+}
+  
+.rect{
+    position: relative;
+    margin: 25px auto;
+    border-radius: 30px;
+    padding: 70px;
+    background-color: #fff;
+    width: 500px;
+    height: 650px;
+}
+
+h2{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 70px;
+}
+  
+form{
+    position: relative;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+  
+input, textarea{
+    font-family:Arial, Helvetica, sans-serif;
+    border: none;
+    padding: 10px 25px;
+    font-size: 15px;
+    border-radius: 30px;
+    background-color: rgb(8, 243, 243);
+}
+  
+input[type="submit"]{
+    margin-top: 35px;
+    border-radius: 20px;
+    background-color: rgb(253, 108, 82);
+    color: #fff;
+}
+  
+.left-bubbles{
+    position: absolute;
+    bottom: 50px;
+    left: -50px;
+    width: 100px;
+    height: 100px;
+}
+  
+.left-bubbles::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: -35px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute; 
+}
+  
+.bubble1{
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    background-color: white;
+    border-radius: 25px 0 0 25px;
+}
+  
+.bubble1::after{
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    display: block;
+    width: 50px;
+    height: 30px;
+    background-color: tomato;
+    border-radius: 0 25px 25px 0;
+}
+
+.bubble1::before{
+    content: '';
+    position: absolute;
+    top: 60px;
+    right: -15px;
+    display: block;
+    width: 50px;
+    height: 30px;
+    background-color: white;
+    border-radius: 25px 0 0 25px;
+}
+
+
+.right-bubbles{
+    position: absolute;
+    top: 50px;
+    right: -50px;
+    width: 100px;
+    height: 100px;
+}
+  
+.bubble2{
+    position: absolute;
+    right: 0;
+    width: 60px;
+    height: 30px;
+    background-color: white;
+    border-radius: 0 25px 25px 0;
+}
+  
+.bubble2::after{
+    content: '';
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: block;
+    width: 60px;
+    height: 30px;
+    background-color: tomato;
+    border-radius: 25px 0 0 25px;
+}
+
+.bubble2::before{
+    content: '';
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    display: block;
+    width: 60px;
+    height: 30px;
+    background-color: white;
+    border-radius: 0 25px 25px 0;
+}
